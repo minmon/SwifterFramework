@@ -81,7 +81,7 @@ body{width: 100%;}
 
 /*	End for testing */
 
-/* Create gutter */
+/* Create gutter.[NEED CERTAIN CALCULATE] */
 
 .col+.col
 {
