@@ -81,7 +81,26 @@ body{width: 100%;}
 
 /*	End for testing */
 
-/* Create gutter.[NEED CERTAIN CALCULATE] */
+/* Create gutter.[NEED CERTAIN CALCULATE] 
+
+scw = (100 – (m * (mc – 1))) / mc
+
+Where:
+
+scw = single column width
+m = margin (0.5%)
+mc = maximum columns (12)
+
+cw = (scw * cs) + (m * (cs-1))
+
+Where: 
+
+cw = column width
+scw = single column width 
+cs = column (1 to 12)
+m = margin (0.5%)
+
+*/
 
 .col+.col
 {
