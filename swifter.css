@@ -238,7 +238,7 @@ p{font-size: 0.85em;}
 [align-left]{text-align: left;}
 [align-right]{text-align: right;}
 
-/*	COLORS [TEXT-BACKGROUND] */
+/*	COLORS [TEXTS-BACKGROUNDS] */
 .text-amber{color:#ffc107 !important}.amber{color:#000 !important;background-color:#ffc107 !important}
 .text-aqua{color:#00ffff !important}.aqua{color:#000 !important;background-color:#00ffff !important}
 .text-blue{color:#2196F3 !important}.blue{color:#fff !important;background-color:#2196F3 !important}
