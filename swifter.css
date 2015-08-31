@@ -159,7 +159,16 @@ body{width: 100%;}
 
 /*	Swifter for padding.	*/
 
-.padding{padding: 10%;}
+.padding1{padding: 1%;}
+.padding2{padding: 2%;}
+.padding3{padding: 3%;}
+.padding4{padding: 4%;}
+.padding5{padding: 5%;}
+.padding6{padding: 6%;}
+.padding7{padding: 7%;}
+.padding8{padding: 8%;}
+.padding9{padding: 9%;}
+.padding10{padding: 10%;}
 .padding-tiny{padding: 2% 4%;}
 .padding-small{padding: 4% 8%;}
 .padding-medium{padding: 8% 16%;}
@@ -171,11 +180,12 @@ body{width: 100%;}
 /*	Swifter for contents configuring. */
 
 h1,h2,h3,h4,h5,h6{font-weight: 400;font-size: 0.85em;}
-image,img{border: 0;}
-
+img{border: 0;}
+p{font-size: 0.85em;}
 
 /* Page resizing */
 
+.full{width: 100%;}
 .half{width: 50%;}
 .half.quarter{width: 75%;}
 .half.third{width: 83.33333333333333%;}
@@ -228,7 +238,7 @@ image,img{border: 0;}
 [align-left]{text-align: left;}
 [align-right]{text-align: right;}
 
-/*	COLORS */
+/*	COLORS [TEXT-BACKGROUND] */
 .text-amber{color:#ffc107 !important}.amber{color:#000 !important;background-color:#ffc107 !important}
 .text-aqua{color:#00ffff !important}.aqua{color:#000 !important;background-color:#00ffff !important}
 .text-blue{color:#2196F3 !important}.blue{color:#fff !important;background-color:#2196F3 !important}
