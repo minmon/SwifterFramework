@@ -81,26 +81,7 @@ body{width: 100%;}
 
 /*	End for testing */
 
-/* Create gutter.[NEED CERTAIN CALCULATE] 
-
-scw = (100 – (m * (mc – 1))) / mc
-
-Where:
-
-scw = single column width
-m = margin (0.5%)
-mc = maximum columns (12)
-
-cw = (scw * cs) + (m * (cs-1))
-
-Where: 
-
-cw = column width
-scw = single column width 
-cs = column (1 to 12)
-m = margin (0.5%)
-
-*/
+/* Create gutter. */
 
 .col+.col
 {
@@ -111,16 +92,16 @@ m = margin (0.5%)
 
 .col.sm1{width: 8.33333%;}
 .col.sm2{width: 16.66666%;}
-.col.sm3{width: 25%;}
+.col.sm3{width: 24.99999%;}
 .col.sm4{width: 33.33333%;}
 .col.sm5{width: 41.66666%;}
-.col.sm6{width: 50%;}
+.col.sm6{width: 49.99999%;}
 .col.sm7{width: 58.33333%;}
 .col.sm8{width: 66.66666%;}
-.col.sm9{width: 75%;}
+.col.sm9{width: 74.99999%;}
 .col.sm10{width: 83.33333%;}
 .col.sm11{width: 91.66666%;}
-.col.sm12{width: 99.9999%;}
+.col.sm12{width: 99.99999%;}
 
 /*	Swifter for medium screen (601px) */
 
