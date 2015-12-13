@@ -6,7 +6,7 @@
 
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;line-height: 1.5}
-body{margin:0}
+body{margin: 0}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
 audio,canvas,video{display:inline-block;vertical-align:baseline}
 audio:not([controls]){display:none;height:0}
@@ -39,9 +39,9 @@ textarea{overflow:auto}
 optgroup{font-weight:bold}
 /* End extract from normalize.css */
 
-/*	Set the maximum body width to 100%. */
+/*	Set the maximum body width to 100% and minimum body height to 100% */
 
-body{width: 100%;}
+body{max-width: 100%;min-height: 100%;}
 
 /*	Block display for fluid container.Current "Swifter version 0.1.0" 
 	only support for fluid container.Hack clearfix.Rounded by block 
@@ -51,7 +51,6 @@ body{width: 100%;}
 	display: block !important;
 	content: "" !important;
 	clear: both !important;
-	height: 100%;
 }
 
 /*	All float elements must set from here. */
@@ -83,10 +82,7 @@ body{width: 100%;}
 
 /* Create gutter. */
 
-.col+.col
-{
-	margin-left: 0.00001%;
-}
+.col+.col{margin-left: 0.00001%;}
 
 /* 12 colum grid system for small state */
 
@@ -151,7 +147,7 @@ body{width: 100%;}
 
 /*	Swifter for border. */
 
-.border-test{border: 1px outset #ccc;}
+.border-test{border: 1px solid #ccc;}
 .border-radius{border-radius: 100%;}
 .border-radius-half{border-radius: 50%;}
 .border-radius-third{border-radius: 33.33333333333333%;}
@@ -179,9 +175,16 @@ body{width: 100%;}
 
 /*	Swifter for contents configuring. */
 
-h1,h2,h3,h4,h5,h6,p{font-weight: 400;font-size: 0.85em;}
-img{border: 0;}
-a{text-decoration: none;}
+h1,h2,h3,h4,h5,h6{font-weight: 400;font-size: 0.85em;}
+img{border: 0;}a{text-decoration: none;font-size: 0.85em;}
+ul.ul,li{list-style-type: none;}
+ul li.li{display: inline;}
+li:hover ul{display: block;}
+li ul li:hover{background-color: #ccc;}
+
+.vdivider{border-left: 1px solid #000;}
+.hdivider{border-bottom: 1px solid #000;}
+.onhover:hover.block+*{display: block;}
 
 /* Page resizing */
 
@@ -193,6 +196,14 @@ a{text-decoration: none;}
 .quarter{width: 25%;}
 .tiny{width: 15%;}
 
+.fullHight{height: 100%;}
+.halfHight{height: 50%;}
+.halfHight.quarter{height: 75%;}
+.halfHight.third{height: 83.33333333333333%;}
+.thirdHight{height: 33.33333333333333%;}
+.quarterHight{height: 25%;}
+.tinyHight{height: 15%;}
+
 /* Main layout */
 
 .block{display: block;}
@@ -201,30 +212,33 @@ a{text-decoration: none;}
 .inline-block{display: inline-block;}
 .absolute{position: absolute;}
 .relative{position: relative;}
-.fix{position: fixed;}
+.fixed{position: fixed;}
 
 /*	Extra layout */
 
 .none{display: none;}
 .flex{display: flex;}
 
-.sr-li{display: list-item;}
+.sr-li{display: list-item;list-style-type: square;}
 
-.sr-caption{display: table-caption;}
-.sr-thead{display: table-header-group;}
-.sr-tfoot{display: table-footer-group;}
-.sr-colgroup{display: table-column-group;}
-.sr-rowgroup{display: table-row-group;}
-.sr-td{display: table-cell;}
-.sr-col{display: table-column;}
-.sr-tr{display: table-row;}
+.caption{display: table-caption;}
+.thead{display: table-header-group;}
+.tfoot{display: table-footer-group;}
+.colgroup{display: table-column-group;}
+.rowgroup{display: table-row-group;}
+.td{display: table-cell;}
+.col{display: table-column;}
+.tr{display: table-row;}
 
 .inline-flex{display: inline-flex;}
 .inline-table{display: inline-table;}
 
 .left{float: left;}
 .right{float: right;}
-.center{margin: auto;}
+.center{margin: 0 auto;}
+
+.top{top: 0;}
+.down{bottom: 0;}
 
 /*	Text Align */
 
@@ -240,7 +254,8 @@ a{text-decoration: none;}
 @-webkit-keyframes rotate180{from{-web-kit-transform: rotate(0deg);}to{-web-kit-transform: rotate(180deg);}}
 @keyframes rotate180{from{transform: rotate(0deg);}to{transform: rotate(180deg);}}
 
-/*	COLORS [TEXTS-BACKGROUNDS] */
+/*	Colors */
+.transparent{color: #fff;background-color: transparent;}
 .tt-amber{color:#ffc107 !important}.amber{color:#000 !important;background-color:#ffc107 !important}
 .tt-aqua{color:#00ffff !important}.aqua{color:#000 !important;background-color:#00ffff !important}
 .tt-blue{color:#2196F3 !important}.blue{color:#fff !important;background-color:#2196F3 !important}
