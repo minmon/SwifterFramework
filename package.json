@@ -1,0 +1,22 @@
+{
+  "name": "Swifter",
+  "version": "0.1.0",
+  "description": "css framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/minmon/SwifterFramework.git"
+  },
+  "keywords": [
+    "swifter"
+  ],
+  "author": "Min Thuta Shein",
+  "license": "GNU",
+  "bugs": {
+    "url": "https://github.com/minmon/SwifterFramework/issues"
+  },
+  "homepage": "https://github.com/minmon/SwifterFramework"
+}

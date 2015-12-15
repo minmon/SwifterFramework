@@ -53,13 +53,13 @@ body{max-width: 100%;min-height: 100%;}
 	clear: both !important;
 }
 
-/*	All float elements must set from here. */
+/*	display row and column */
 
-.col,.row{float: left !important;}
+.col{float: left !important;}
 
 /*	Create the row for manipulate the colums. */
 
-.row{clear: both !important;width: 100%;height: auto;}
+.row{display: table !important;width: 100%;height: auto;}
 
 /* Example for testing */
 
@@ -174,17 +174,24 @@ body{max-width: 100%;min-height: 100%;}
 .padding-jumbo{padding: 128px 256px;}
 
 /*	Swifter for contents configuring. */
+h1,h2,h3,h4,h5,h6,a,span{font-size: 0.85em;}
+h1,h2,h3,h4,h5,h6{font-weight: 400;}
+img{border: 0;}a{color: #000;text-decoration: none;}
 
-h1,h2,h3,h4,h5,h6{font-weight: 400;font-size: 0.85em;}
-img{border: 0;}a{text-decoration: none;font-size: 0.85em;}
-ul.ul,li{list-style-type: none;}
-ul li.li{display: inline;}
-li:hover ul{display: block;}
-li ul li:hover{background-color: #ccc;}
+ul.ul,li.li li{list-style-type: none;}
+li.li{float: left;}
+li.li,.dropdown.hover{position: relative;display: inline-block !important;padding: 2px 0 2px 0;min-width: 4rem !important;}
+li:hover > ul,.dropdown.hover:hover .dropdown.content{display: block;z-index: 1 !important;}
+li ul,.dropdown.content{position: absolute;display: none;min-width: 4rem !important;}
+li li,.dropdown.content *{display: block;}
+li li:hover,.dropdown.content *:hover{border-bottom: 1px outset #fff;background-color: #ccc;}
+li li:last-child,.dropdown.content *:last-child{border-bottom: none;}
 
-.vdivider{border-left: 1px solid #000;}
-.hdivider{border-bottom: 1px solid #000;}
-.onhover:hover.block+*{display: block;}
+.clearfix{content: "";clear: both;}
+.remove.float{float: none;}
+.vdivider{border-right: 1px solid #fff;}
+.hdivider{border-bottom: 1px solid #fff;}
+.onhover:hover.block *{display: block;}
 
 /* Page resizing */
 
@@ -249,10 +256,21 @@ li ul li:hover{background-color: #ccc;}
 
 /*	Animation */
 
-.rotate180:hover{animation: rotate180 0.5s;}
+.rotate180:hover{-web-kit-animation: rotate180 0.5s;animation: rotate180 0.5s;}
 
 @-webkit-keyframes rotate180{from{-web-kit-transform: rotate(0deg);}to{-web-kit-transform: rotate(180deg);}}
 @keyframes rotate180{from{transform: rotate(0deg);}to{transform: rotate(180deg);}}
+@keyframes fadein{from{opacity: 0;}to{opacity: 1;}}
+
+/*	Papers */
+
+.paper{border:1px solid #ccc}
+.paper2{box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important}
+.paper4{box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important}
+.paper8{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important}
+.paper12{box-shadow:0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19) !important}
+.paper16{box-shadow:0 16px 24px 0 rgba(0,0,0,0.22),0 25px 55px 0 rgba(0,0,0,0.21) !important}
+.paper24{box-shadow:0 24px 24px 0 rgba(0,0,0,0.2),0 40px 77px 0 rgba(0,0,0,0.22) !important}
 
 /*	Colors */
 .transparent{color: #fff;background-color: transparent;}
