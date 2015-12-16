@@ -1,43 +1,16 @@
+@import url("swifter/margin.css");
+@import url("swifter/border.css");
+@import url("swifter/padding.css");
+@import url("swifter/contents.css");
+@import url("swifter/layouts.css");
+@import url("swifter/pageresize.css");
+@import url("swifter/normalize.css");
+
 /*	Swifter version 0.1.0	*/
 
 /*	Remove the default browser settings for all elements. */
 
 *{margin: 0;padding: 0;box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;}
-
-/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
-html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;line-height: 1.5}
-body{margin: 0}
-article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
-audio,canvas,video{display:inline-block;vertical-align:baseline}
-audio:not([controls]){display:none;height:0}
-[hidden],template{display:none}
-a{-webkit-tap-highlight-color:transparent;background-color:transparent}
-a:active,a:hover{outline:0}
-abbr[title]{border-bottom:1px dotted}
-b,strong{font-weight:bold}
-dfn{font-style:italic}
-mark{background:#ff0;color:#000}
-small{font-size:80%}
-sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
-sup{top:-0.5em} sub{bottom:-0.25em}
-img{border:0} svg:not(:root){overflow:hidden} figure{margin:1em 40px}
-hr{-moz-box-sizing:content-box;box-sizing:content-box}
-pre{overflow:auto}
-code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
-button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}
-button{overflow:visible}button,select{text-transform:none}
-button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
-button[disabled],html input[disabled]{cursor:default}
-button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
-input[type=checkbox],input[type=radio]{padding:0}
-input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}
-input[type=search]{box-sizing:content-box;-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box}
-input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}
-fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}
-legend{border:0;padding:0}
-textarea{overflow:auto}
-optgroup{font-weight:bold}
-/* End extract from normalize.css */
 
 /*	Set the maximum body width to 100% and minimum body height to 100% */
 
@@ -59,7 +32,7 @@ body{max-width: 100%;min-height: 100%;}
 
 /*	Create the row for manipulate the colums. */
 
-.row{display: table !important;width: 100%;height: auto;}
+.row{display: table !important;width: 100%;}
 
 /* Example for testing */
 
@@ -143,124 +116,12 @@ body{max-width: 100%;min-height: 100%;}
 
 }
 
-/*	Swifter for magin. */
-
-/*	Swifter for border. */
-
-.border-test{border: 1px solid #ccc;}
-.border-radius{border-radius: 100%;}
-.border-radius-half{border-radius: 50%;}
-.border-radius-third{border-radius: 33.33333333333333%;}
-.border-radius-quarter{border-radius: 25%;}
-
-/*	Swifter for padding.	*/
-
-.padding1{padding: 1%;}
-.padding2{padding: 2%;}
-.padding3{padding: 3%;}
-.padding4{padding: 4%;}
-.padding5{padding: 5%;}
-.padding6{padding: 6%;}
-.padding7{padding: 7%;}
-.padding8{padding: 8%;}
-.padding9{padding: 9%;}
-.padding10{padding: 10%;}
-.padding-tiny{padding: 2px 4px;}
-.padding-small{padding: 4px 8px;}
-.padding-medium{padding: 8px 16px;}
-.padding-large{padding: 16px 32px;}
-.padding-xlarge{padding: 32px 64px;}
-.padding-xxlarge{padding: 64px 128px;}
-.padding-jumbo{padding: 128px 256px;}
-
-/*	Swifter for contents configuring. */
-h1,h2,h3,h4,h5,h6,a,span{font-size: 0.85em;}
-h1,h2,h3,h4,h5,h6{font-weight: 400;}
-img{border: 0;}a{color: #000;text-decoration: none;}
-
-ul.ul,li.li li{list-style-type: none;}
-li.li{float: left;}
-li.li,.dropdown.hover{position: relative;display: inline-block !important;padding: 2px 0 2px 0;min-width: 4rem !important;}
-li:hover > ul,.dropdown.hover:hover .dropdown.content{display: block;z-index: 1 !important;}
-li ul,.dropdown.content{position: absolute;display: none;min-width: 4rem !important;}
-li li,.dropdown.content *{display: block;}
-li li:hover,.dropdown.content *:hover{border-bottom: 1px outset #fff;background-color: #ccc;}
-li li:last-child,.dropdown.content *:last-child{border-bottom: none;}
-
-.clearfix{content: "";clear: both;}
-.remove.float{float: none;}
-.vdivider{border-right: 1px solid #fff;}
-.hdivider{border-bottom: 1px solid #fff;}
-.onhover:hover.block *{display: block;}
-
-/* Page resizing */
-
-.full{width: 100%;}
-.half{width: 50%;}
-.half.quarter{width: 75%;}
-.half.third{width: 83.33333333333333%;}
-.third{width: 33.33333333333333%;}
-.quarter{width: 25%;}
-.tiny{width: 15%;}
-
-.fullHight{height: 100%;}
-.halfHight{height: 50%;}
-.halfHight.quarter{height: 75%;}
-.halfHight.third{height: 83.33333333333333%;}
-.thirdHight{height: 33.33333333333333%;}
-.quarterHight{height: 25%;}
-.tinyHight{height: 15%;}
-
-/* Main layout */
-
-.block{display: block;}
-.table{display: table;}
-.inline{display: inline;}
-.inline-block{display: inline-block;}
-.absolute{position: absolute;}
-.relative{position: relative;}
-.fixed{position: fixed;}
-
-/*	Extra layout */
-
-.none{display: none;}
-.flex{display: flex;}
-
-.sr-li{display: list-item;list-style-type: square;}
-
-.caption{display: table-caption;}
-.thead{display: table-header-group;}
-.tfoot{display: table-footer-group;}
-.colgroup{display: table-column-group;}
-.rowgroup{display: table-row-group;}
-.td{display: table-cell;}
-.col{display: table-column;}
-.tr{display: table-row;}
-
-.inline-flex{display: inline-flex;}
-.inline-table{display: inline-table;}
-
-.left{float: left;}
-.right{float: right;}
-.center{margin: 0 auto;}
-
-.top{top: 0;}
-.down{bottom: 0;}
-
 /*	Text Align */
 
 [align-center]{text-align: center;}
 [align-justify]{text-align: justify;}
 [align-left]{text-align: left;}
 [align-right]{text-align: right;}
-
-/*	Animation */
-
-.rotate180:hover{-web-kit-animation: rotate180 0.5s;animation: rotate180 0.5s;}
-
-@-webkit-keyframes rotate180{from{-web-kit-transform: rotate(0deg);}to{-web-kit-transform: rotate(180deg);}}
-@keyframes rotate180{from{transform: rotate(0deg);}to{transform: rotate(180deg);}}
-@keyframes fadein{from{opacity: 0;}to{opacity: 1;}}
 
 /*	Papers */
 

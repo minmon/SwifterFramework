@@ -1,0 +1,31 @@
+.block{display: block;}
+.table{display: table;}
+.inline{display: inline;}
+.inline-block{display: inline-block;}
+.absolute{position: absolute;}
+.relative{position: relative;}
+.fixed{position: fixed;}
+
+.none{display: none;}
+.flex{display: flex;}
+
+.sr-li{display: list-item;list-style-type: square;}
+
+.caption{display: table-caption;}
+.thead{display: table-header-group;}
+.tfoot{display: table-footer-group;}
+.colgroup{display: table-column-group;}
+.rowgroup{display: table-row-group;}
+.td{display: table-cell;}
+.tcol{display: table-column;}
+.tr{display: table-row;}
+
+.inline-flex{display: inline-flex;}
+.inline-table{display: inline-table;}
+
+.left{float: left;}
+.right{float: right;}
+.center{margin: 0 auto;}
+
+.top{top: 0;}
+.down{bottom: 0;}

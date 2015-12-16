@@ -1,0 +1,15 @@
+.full{width: 100%;}
+.half{width: 50%;}
+.half.quarter{width: 75%;}
+.half.third{width: 83.33333333333333%;}
+.third{width: 33.33333333333333%;}
+.quarter{width: 25%;}
+.tiny{width: 15%;}
+
+.fullHight{height: 100%;}
+.halfHight{height: 50%;}
+.halfHight.quarter{height: 75%;}
+.halfHight.third{height: 83.33333333333333%;}
+.thirdHight{height: 33.33333333333333%;}
+.quarterHight{height: 25%;}
+.tinyHight{height: 15%;}

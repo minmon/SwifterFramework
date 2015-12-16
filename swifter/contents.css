@@ -1,0 +1,22 @@
+@media screen and (max-width: 600px)
+{
+	li.li,.dropdown.hover,.dropdown.content{width: 100%;float: none;}
+}
+			
+h1,h2,h3,h4,h5,h6,a,span{font-size: 0.85em;}
+h1,h2,h3,h4,h5,h6{font-weight: 400;}
+img{border: 0;}a{color: #000;text-decoration: none;}
+
+ul.ul,li.li li{list-style-type: none;}
+li.li{float: left;}
+li.li,.dropdown.hover{position: relative;display: inline-block !important;padding: 6px 0 6px 0;min-width: 7rem !important;cursor: pointer;}
+li:hover > ul,.dropdown.hover:hover .dropdown.content{display: block;z-index: 1 !important;}
+li ul,.dropdown.content{position: absolute;display: none;min-width: 8.5rem !important;}
+li li,.dropdown.content *{display: block;min-height: 2rem;}
+li li:hover,.dropdown.content *:hover{border-bottom: 1px outset #fff;background-color: #ccc;}
+li li:last-child,.dropdown.content *:last-child{border-bottom: none;}
+
+.clearfix{content: "";clear: both;}
+.remove.float{float: none;}
+.vdivider{border-right: 1px solid #fff;}
+.hdivider{border-bottom: 1px solid #fff;}
