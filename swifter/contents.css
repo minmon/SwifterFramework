@@ -16,7 +16,7 @@ ul.ul,li.li li{list-style-type: none;}
 li.li{float: left;}
 li.li,.dropdown.hover{position: relative !important;display: inline-block !important;padding: 6px 0 6px 0;min-width: 7rem !important;background-color: #000;cursor: pointer;}
 li:hover > ul,.dropdown.hover:hover .dropdown.content{display: block;z-index: 1 !important;}
-li ul,.dropdown.content{position: absolute !important;display: none;min-width: 8.5rem !important;background-color: #fff;}
+li ul,.dropdown.content{top: 100%;position: absolute !important;display: none;min-width: 8.5rem !important;background-color: #fff;}
 li li,.dropdown.content *{display: block;min-height: 2rem;}
 li li:hover,.dropdown.content *:hover{border-bottom: 1px outset #fff;background-color: #ccc;}
 li li:last-child,.dropdown.content *:last-child{border-bottom: none;}
