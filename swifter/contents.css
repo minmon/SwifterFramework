@@ -3,7 +3,7 @@
 	li.li,.dropdown.hover,.dropdown.content{width: 100%;float: none;}
 }
 			
-a,span{font-size: 0.85em;}
+.btn,a,span{font-size: 0.85em;}
 h1,h2,h3,h4,h5,h6{font-weight: 400;}
 img{border: 0;}a{color: #000;text-decoration: none;}
 
@@ -15,6 +15,8 @@ li ul,.dropdown.content{position: absolute;display: none;min-width: 8.5rem !impo
 li li,.dropdown.content *{display: block;min-height: 2rem;}
 li li:hover,.dropdown.content *:hover{border-bottom: 1px outset #fff;background-color: #ccc;}
 li li:last-child,.dropdown.content *:last-child{border-bottom: none;}
+
+.btn{display: inline-block;color: #fff;background: #000;width: 50px;padding: 2.5px 2.5px;}
 
 .clearfix{content: "";clear: both;}
 .remove.float{float: none;}
