@@ -1,6 +1,6 @@
 @media screen and (max-width: 600px)
 {
-	li.li,.dropdown.hover,.dropdown.content{width: 100%;float: none;}
+	li.li,li ul,.dropdown.hover,.dropdown.content{width: 100%;float: none;}
 }
 .btn,a,span{font-size: 0.85em;}
 h1,h2,h3,h4,h5,h6{font-weight: 400;}
@@ -14,7 +14,7 @@ img{border: 0;}a{color: #000;text-decoration: none;}
 
 ul.ul,li.li li{list-style-type: none;}
 li.li{float: left;}
-li.li,.dropdown.hover{position: relative !important;display: inline-block !important;padding: 6px 0 6px 0;min-width: 7rem !important;background-color: grey;cursor: pointer;}
+li.li,.dropdown.hover{position: relative !important;display: inline-block !important;padding: 6px 0 6px 0;min-width: 7rem !important;background-color: #000;cursor: pointer;}
 li:hover > ul,.dropdown.hover:hover .dropdown.content{display: block;z-index: 1 !important;}
 li ul,.dropdown.content{position: absolute !important;display: none;min-width: 8.5rem !important;background-color: #fff;}
 li li,.dropdown.content *{display: block;min-height: 2rem;}
