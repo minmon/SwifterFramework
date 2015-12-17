@@ -2,8 +2,7 @@
 {
 	li.li,.dropdown.hover,.dropdown.content{width: 100%;float: none;}
 }
-			
-a,span,p{font-size: 0.85em;}
+.btn,a,span{font-size: 0.85em;}
 h1,h2,h3,h4,h5,h6{font-weight: 400;}
 h6{font-size: 12px;}
 h5{font-size: 15px;}
