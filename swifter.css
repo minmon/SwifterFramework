@@ -10,18 +10,17 @@
 
 /*	Remove the default browser settings for all elements. */
 
-*{margin: 0;padding: 0;box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;font-family: san-serif;}
+*{box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;font-family: san-serif;}
 
 /*	Set the maximum body width to 100% and minimum body height to 100% */
-
-body{max-width: 100%;min-height: 100%;}
+body,html{max-width: 100%;background: red;height: auto;}
 
 /*	Block display for fluid container.Current "Swifter version 0.1.0" 
 	only support for fluid container.Hack clearfix.Rounded by block 
 	display for manipulating and controlling. */
 
-.container:before,.container:after{
-	display: block !important;
+.container:before,.container:after,.row:before,.row:after{
+	display: table !important;
 	content: "" !important;
 	clear: both !important;
 }
@@ -30,14 +29,9 @@ body{max-width: 100%;min-height: 100%;}
 
 .col{float: left !important;}
 
-/*	Create the row for manipulate the colums. */
-
-.row{display: table !important;width: 100%;}
-
 /* Example for testing */
 
 .container-example:before,.container-example:after{
-	display: block !important;
 	content: "" !important;
 	clear: both !important;
 }
@@ -96,7 +90,7 @@ body{max-width: 100%;min-height: 100%;}
 
 /*	Swifter for large screen (993px) */
 
-@media only screen and (min-width: 993px)
+@media only screen and (min-width: 1000px)
 {
 
 /* 12 colum grid system for large state */
