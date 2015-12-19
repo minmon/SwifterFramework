@@ -10,19 +10,31 @@
 
 /*	Remove the default browser settings for all elements. */
 
-*{box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;font-family: san-serif;}
+*{margin: 0;box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;font-family: san-serif;}
 
 /*	Set the maximum body width to 100% and minimum body height to 100% */
-body,html{max-width: 100%;background: red;height: auto;}
+
+html,body{height: 100%;border: 1px outset blue;}
 
 /*	Block display for fluid container.Current "Swifter version 0.1.0" 
-	only support for fluid container.Hack clearfix.Rounded by block 
+	only support for fluid container.Hack clearfix.Rounded by table
 	display for manipulating and controlling. */
 
-.container:before,.container:after,.row:before,.row:after{
+.container{
+	min-height: 100%;
+	height: auto;
+	height: 100%;
+	margin: 0 auto -155px;
+}
+
+.footer,.push{
+	height: 155px;
+}
+	
+.container:after,.row:after{
 	display: table !important;
 	content: "" !important;
-	clear: both !important;
+	clear: both;
 }
 
 /*	display row and column */
@@ -49,7 +61,7 @@ body,html{max-width: 100%;background: red;height: auto;}
 
 /* Create gutter. */
 
-.col+.col{margin-left: 0.00001%;}
+.col+.col{margin-left: 0.00001%;padding: 1px;}
 
 /* 12 colum grid system for small state */
 

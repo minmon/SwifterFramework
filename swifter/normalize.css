@@ -1,6 +1,6 @@
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;line-height: 1.5;}
-body{margin: 0;padding: 0}
+body{margin: 0;}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
 audio,canvas,video{display:inline-block;vertical-align:baseline}
 audio:not([controls]){display:none;height:0}
