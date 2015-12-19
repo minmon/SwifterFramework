@@ -14,30 +14,19 @@
 
 /*	Set the maximum body width to 100% and minimum body height to 100% */
 
-html,body{height: 100%;border: 1px outset blue;}
+html,body{height: 100%;}
 
 /*	Block display for fluid container.Current "Swifter version 0.1.0" 
 	only support for fluid container.Hack clearfix.Rounded by table
 	display for manipulating and controlling. */
 
-.container{
-	min-height: 100%;
-	height: auto;
-	height: 100%;
-	margin: 0 auto -155px;
-}
-
-.footer,.push{
-	height: 155px;
-}
-	
 .container:after,.row:after{
 	display: table !important;
 	content: "" !important;
 	clear: both;
 }
 
-/*	display row and column */
+/*	display column */
 
 .col{float: left !important;}
 
