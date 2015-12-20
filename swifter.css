@@ -17,7 +17,7 @@
 html,body{height: 100%;}
 
 /*	Block display for fluid container.Current "Swifter version 0.1.0" 
-	only support for fluid container.Hack clearfix.Rounded by table
+	only support for fluid container.Hack clearfix.Rounded by block
 	display for manipulating and controlling. */
 
 .container{
