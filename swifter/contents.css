@@ -2,9 +2,13 @@
 {
 	li.li,li ul,.dropdown.hover,.dropdown.content{width: 100% !important;float: none;}
 }
+@media screen and (min-width: 601px)
+{
+	
+}
 
 .btn,a,span{font-size: 0.85em;}
-h1,h2,h3,h4,h5,h6{font-weight: 400;}
+h1,h2,h3,h4,h5,h6{font-weight: 400;margin: 10px 0;}
 h6{font-size: 12px;}
 h5{font-size: 15px;}
 h4{font-size: 16px;}
@@ -16,14 +20,18 @@ img{border: 0;}a{color: #000;text-decoration: none;}
 ul,li{margin:0;padding: 0;}
 ul.ul,li.li li{list-style-type: none;}
 li.li{float: left;}
-li.li,.dropdown.hover{position: relative !important;display: inline-block !important;padding: 12px 0!important;min-width: 7rem !important;background-color: #000;cursor: pointer;}
+li.li,.dropdown.hover{position: relative !important;display: inline-block !important;margin: 0 auto 10px;padding: 12px 0!important;min-width: 7rem !important;background-color: #000;cursor: pointer;}
 li:hover > ul,.dropdown.hover:hover .dropdown.content{display: block;z-index: 1 !important;}
-li ul,.dropdown.content{top: 100%;position: absolute !important;display: none;padding: 5px 6px;min-width: 8.5rem !important;background-color: #fff;}
-li li ,.dropdown.content *{display: block;min-height: 2rem;padding: 6px 12.5px 12px;}
+li ul,.dropdown.content{top: 100% !important;position: absolute !important;display: none;padding: 5px 6px !important;min-width: 8.5rem !important;background-color: #fff;}
+li li ,.dropdown.content *{display: block !important;min-height: 2rem;padding: 6px 12.5px 12px !important;}
 li li:hover,.dropdown.content *:hover{border-bottom: 1px outset #fff;background-color: #ccc;}
 li li:last-child,.dropdown.content *:last-child{border-bottom: none;}
 
-.btn{text-align: center;font-size: 0.75em;display: inline-block;padding: 2.5px;min-width: 4em;color: #fff;background-color: #000;}
+footer,.container:after{
+	height: 4em;
+}
+
+.btn{text-align: center;font-size: 0.75em;display: inline-block;margin: 10px 0;padding: 2.5px !important;min-width: 4em;color: #fff;background-color: #000;}
 .btn.default{text-align: initial;display: initial;padding: initial;min-width: initial;color: #fff;background-color: #000;}
 .btn.normal{font-size: 0.8em;}
 .btn.small{font-size: 0.7em;min-width: 5em;}

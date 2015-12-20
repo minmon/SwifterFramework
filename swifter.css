@@ -20,8 +20,13 @@ html,body{height: 100%;}
 	only support for fluid container.Hack clearfix.Rounded by table
 	display for manipulating and controlling. */
 
+.container{
+	min-height: 100%;
+	margin-bottom: -4em;
+}	
+	
 .container:after,.row:after{
-	display: table !important;
+	display: block !important;
 	content: "" !important;
 	clear: both;
 }
