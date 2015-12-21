@@ -12,18 +12,20 @@
 
 *{margin: 0;box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;font-family: san-serif;}
 
-/*	Set the maximum body width to 100% and minimum body height to 100% */
+/*	Set the maximum body width to 100% and body height to 100%.Body 
+	height relative with sticky footer. */
 
-html,body{height: 100%;}
+html,body{max-width: 100%;height: 100% !important;}
 
-/*	Block display for fluid container.Current "Swifter version 0.1.0" 
-	only support for fluid container.Hack clearfix.Rounded by block
-	display for manipulating and controlling. */
-
+/*  Setting for sticky footer. */	
 .container{
 	min-height: 100%;
 	margin-bottom: -4em !important;
 }	
+
+/*	Block display for fluid container.Current "Swifter version 0.1.1" 
+	only support for fluid container.Hack clearfix.Rounded by block
+	display for manipulating and controlling.*/
 	
 .container:after,.row:after{
 	display: block !important;
