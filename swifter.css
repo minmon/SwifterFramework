@@ -22,7 +22,7 @@ html,body{height: 100%;}
 
 .container{
 	min-height: 100%;
-	margin-bottom: -4em;
+	margin-bottom: -0.5em;
 }	
 	
 .container:after,.row:after{
