@@ -22,7 +22,11 @@ html,body{height: 100%;}
 
 .container{
 	min-height: 100%;
+<<<<<<< HEAD
 	margin-bottom: -0.5em;
+=======
+	margin-bottom: -4em !important;
+>>>>>>> 057a2496297bc0946ba22b688dd8d04527439994
 }	
 	
 .container:after,.row:after{
