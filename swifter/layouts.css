@@ -29,3 +29,17 @@
 
 .top{top: 0;}
 .down{bottom: 0;}
+
+/* Newspaper Layout */
+
+.np.col{
+	column-count: initial;
+	-web-kit-column-count: initial;
+	-moz-column-count: initial;
+}
+
+.np.12.col{
+	column-count: 2;
+	-web-kit-column-count: 2;
+	-moz-column-count: 2;	
+}
