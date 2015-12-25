@@ -8,7 +8,7 @@
 	src: url(../contents/fonts/segoescb.ttf);
 }
 
-.btn,a,span,p{font-size: 0.85em;}
+.btn,a,span,p{font-size: 0.80em;}
 
 h1,h2,h3,h4,h5,h6{font-weight: 400;margin: 10px 0 !important;}
 h6{font-size: 12px;}
@@ -30,11 +30,11 @@ li.li,.dropdown.hover{
 	margin: 0 auto 5px !important;
 	padding: 5px 0!important;
 	min-width: 7rem !important;
-	background-color: #000;
+	background-color: #ccc;
 	cursor: pointer;
 }
 li.li a,.dropdown.hover > *{
-	padding: 6px 0 6px 6px !important;
+	padding: 12px 8px 8px 12px !important;
 }
 li:hover > ul,.dropdown.hover:hover .dropdown.content{
 	display: block;
@@ -51,7 +51,7 @@ li ul,.dropdown.content{
 li li a,.dropdown.content *{
 	display: block !important;
 	min-height: 1.5rem !important;
-	padding: 12px 0 12px 0 !important;
+	padding: 8px 0 8px 0 !important;
 }
 li li:hover,.dropdown.content *:hover{
 	border-bottom: 1px outset #fff;
@@ -65,20 +65,21 @@ li li:last-child,.dropdown.content *:last-child{
 
 ul.ul.fly.in{
 	position: fixed;
-	width: 100%;
-	top: 0;
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 5%;
 	left: -100%;
 }
-ul.ul.fly.in li.li > ul{display: block;}
+ul.ul.fly.in li.li > ul{display: block;z-index: 1;}
 input[class^="open close fly in"]{display: none;}
 input[class^="open close fly in"]:checked~ul.ul.fly.in{
 	left: 0;transition: 0.5s;
-	-web-kit-transition: 0.5s;
+	-webkit-transition: 0.5s;
 	-moz-transition: 0.5s;
 }
 input[class^="open close fly in"]:not(:checked)~ul.ul.fly.in{
 	left: -100%;transition: 0.5s;
-	-web-kit-transition: 0.5s;
+	-webkit-transition: 0.5s;
 	-moz-transition: 0.5s;
 }
 label[for="open close fly in"]{
@@ -88,6 +89,44 @@ label[for="open close fly in"]{
 	font-size: 20px;
 	cursor: pointer;
 }
+
+/* Select */
+
+.pretty.select,.pretty.select > span,.pretty.select > .ps.options{display: inline-block;}
+
+.pretty.select{
+	position: relative;
+	min-width: 125px !important;
+}
+.pretty.select > input[id="ps options"]{
+	display: none;
+}
+.pretty.select > label[for="ps options"]{
+	padding: 10px;
+	border: 1px solid #000;
+	font-size: 0.6em;
+	cursor: pointer;
+}
+.pretty.select > input[id="ps options"]:checked~.ps.options{
+	display: block;
+	transition: 0.5s;
+}
+.pretty.select > span{
+	margin-left: 6px;
+	min-width: 100px;
+}
+.pretty.select > .ps.options{
+	position: absolute;
+	display: none;
+	width: 100%;
+	z-index: 1;
+}
+
+.pretty.select > .ps.options.up{bottom: 100%;}
+.pretty.select > .ps.options.down{top: 100%;}
+
+.ps.options *{display: block;padding: 2.5px !important;background: #fff;}
+.ps.options *:hover{background: #ccc;border-bottom: 1px solid #ccc;cursor: pointer;}
 
 /*	Sticky footer */
 
@@ -109,7 +148,7 @@ footer,.footer,.container:after{height: 4em !important;}
 	text-align: initial;
 	font-size: initial;
 	display: initial;
-	margin: initial initial;
+	margin: initial;
 	padding: initial;
 	min-width: initial;
 	color: #fff;
